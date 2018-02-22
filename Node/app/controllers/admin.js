@@ -4,7 +4,6 @@ module.exports.formulario_inclusao_noticia  = function(application, req, res){
 
 module.exports.noticia_salvar = function(application, req, res){
   var noticia = req.body;
-  console.log(noticia);
 
   req.assert('titulo','Titulo é obrigatório').notEmpty();
   req.assert('resumo','Titulo é obrigatório').notEmpty();
